@@ -6,6 +6,8 @@ Please raise issues and features here: https://github.com/Rebecku/dashi-issues/i
 
 ## bugs
 please provide as much detail as you can about the issue such as: screenshots, error messages, behaviour, recreation steps for faster bug resolution times!
+Use the Bug label for bugs.
 
 ## feature requests
 please put as many requirements in the feature request as possible - this will help for it to be completed quickest.
+Use the enhancement label for new feature requests
