@@ -1,3 +1,6 @@
+# Dashi
+[Dashi Documentation](Dahi.md)
+
 # Dashi Issue and Feature Tracker
 
 This repository is an issue / feature tracker repository for https://crowclub.vercel.app/
