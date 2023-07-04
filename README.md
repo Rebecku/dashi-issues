@@ -1,5 +1,5 @@
 # Dashi
-[Dashi Documentation](Dahi.md)
+[Dashi Documentation](Dashi.md)
 
 # Dashi Issue and Feature Tracker
 
