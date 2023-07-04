@@ -6,6 +6,7 @@ It is a GW2 dashboard app which consumes the GW2 APIs in order to display things
 * your story progress
 
 # Features available now
+* Dark mode
 * Character view which shows:
    - inventory
    - some basic stats
