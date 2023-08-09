@@ -1,5 +1,12 @@
 # Changelog
 changes will be added here and will display reverse chronological order (latest first)
+
+## 24/07/2023
+* Added trading post view which includes:
+  - Items waiting for pickup
+  - Current conversion rate for gems -> gold and gold -> gems
+  - Your pending sell transactions
+
 ## 09/07/2023
 * Added hero points, points of interest and heart legends to the interactive map.
 
