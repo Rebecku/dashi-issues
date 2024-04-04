@@ -1,4 +1,6 @@
 # Dashi
+Dashi is a dashboard companion hub for the Guild Wars 2 game. It makes use of the official Guild Wars 2 APIs.
+For full feature list of Dashi, please view the documentation below:
 [Dashi Documentation](Dashi.md)
 
 **Please note:** Dashi is currently in beta so it is likely you will encouter some bugs
