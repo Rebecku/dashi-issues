@@ -1,135 +1,145 @@
-# What is it?
-This is currently in beta so you may experience some bugs - please feel free to report these in the Issues tab in GitHub. (link within the app in the drop down menu)
-It is a GW2 dashboard app which consumes the GW2 APIs in order to display things such as:
-* your characters and inventories
-* your bank items
-* your story progress
+# Dashi - a GW2 Companion app.
+Dashi is a Guild Wars 2 companion app which consumes data from the official GW2 API's.
+Use your API key created from the official GW2 website (in Account Settings) in order to view information about your account. Different permissions are required for different tiles, so be sure to grant the ones you want in order to be able to see that information. If your key does not have the required permissions, tiles that require it will tell you so.
+Your Account information is not stored in any servers and is only stored on the client side.
 
-# Features available now
- ## Dark mode
- You can change the theme of the app to use dark mode if you so prefer. This is accessed by clicking the settings menu drop down and using the toggle switch:
- 
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/3cedfd7b-c6e4-4622-b711-883227e31425)
+Dashi is still under development so bugs may be present. Please feel free to report any issues you experience within the Issues tab and these will be addressed when time permits.
 
-you can switch back to light theme by using the toggle again. Your preference will be stored in localstorage so the preference will persist the next time you load the app.
+## Features
+The full feature list is still a work-in-progress with many more to be added in the future. You can submit feature requests via the Issues tab.
 
-## Remember API Key
-You can tell the app to remember your API Key so you do not need to input it every time by clicking on the settings drop down and checking the "Remember key" option:
+### Character View
+The character view shows information at an individual character level. You can use the drop down to swap between your characters to view the following information:
+* Character's Equipment with item chat link
+* Character's Inventory with search and item chat link
+* Story Progress for that character with drilldown
+* Character stats (death, birthday, level, age)
 
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/7c862bf5-93ec-47f1-9aed-f597fd59de2b)
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/6d1f1d1e-0307-43af-b1af-140c708ddc0d)
 
-This will store your API Key in localstorage. You can click "Remove" to have the app forget your key if you no longer want the app to store it:
+#### Inventory Search
+Type in the search box to search over your characters inventory and narrow down results:
 
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/ea060e8c-742b-487e-8e15-c64a68573529)
-
-Be sure to remember to untick the "Remember key" preference if you reset the key, since your preference for remembering it will still be set to true, so untick it to set to false before entering your API key again:
-
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/e49060b8-00bd-4fb4-bafc-9b19fd45dad6)
-
-## Character View
-The character view is a dashboard view within the context of a specific character.
-
-Showing:
-   - inventory
-   - some basic stats
-   - equipment
-   - story progress
-
-### Inventory
-You can search through your characters inventory using the supplied search bar:
-
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/53183365-d20b-4580-bad2-0fc134b14ad4)
-
-The inventory count will update with the search results.
-
-You can hover over an item to see its details and chat link:
-
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/13ebabae-53ad-4906-a842-edae2d47df7a)
-
-The details will display its name and rarity. The background colour reflects the rarity of the item.
-
-Click the chatlink to copy it to clip board so you can paste it in-game:
-
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/ace4b176-6c24-4fd0-9629-4548238e011b)
-
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/2c42d554-45ba-4cec-9e3d-a5b6637a2b60)
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/fe2b59dc-73b7-4b0a-ab2b-279cc81c8b5c)
 
 
-### Equipment
-Similar to the Inventory, you can hover over your items to see the details. No search is given in this view since there are only a few items.
+#### Item details
+hover over an item with your mouse to view its details, as well as to see the in game chat link which can be copied with a click:
 
-### Story Progress
-
-You can view your overall story progress for each story type:
-
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/5abcc90a-1d50-4730-8973-6457654aa12c)
-
-**please note** The "My Story" will not reflect accurately due to there being different paths depending on the answers you gave during char creation, and also depending upon your characters race. These have not been accounted for yet. Also note that if you replay story episodes for achievements etc, sometimes the GW2 API can report incorrectly, and therefore may show as not completed, but really is.
-
-You can click on one of the story bars to see all of the chapters that make up that story, and the completion of each of those chapters:
-
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/51db473c-5f46-430d-8df0-55717c506aa8)
-
-Each chapter can also be drilled into in a similar way:
-
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/e29d7ca2-3dd6-42e0-8a6b-c16688775d14)
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/bead4fd6-432f-497c-be6b-45dc09c636c5)
 
 
-## Account View 
-Account view is a dashboard view of the overall GW2 account.
-Showing:
-   - bank
-   - wallet
+#### Story Progress Drilldown
 
-### Bank
-Similar to the inventory, the Bank can be searched through using the supplied search bar.
-You can also copy the chat link, and see the details when hovering over the item.
+click an expansion / season to drill down into the individual episodes to see which ones your character has completed. Click an episode to see the chapters that make it up, and your progress with those:
 
-### Wallet
-The wallet shows all of your various currencies. Hover over an item to see how much of that currency you have:
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/41a9fb39-64bb-48d8-b1c9-aec57dfd984d)
 
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/a11228b2-8923-4f67-8f46-9511d290b0f6)
 
-**Note** Coin comes back from the API in coppers - some changes will come in soon to convert these into gold, silver and copper appropriately, but currently it will display as copper. For example: 778532 would be 77 gold, 85 silver and 32 copper.
+### Account View
+The account view shows account level information such as :
+* Bank inventory with search and item chat link
+* Wallet
+* Gold count
+* Mount skin unlocks
+* Outfit unlocks
+
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/777a36e6-ac01-44cc-aef3-c35311c08938)
+
+
+### Map View
+Map view gives you an interactive GW2 Map (data provided from the official GW2 map service APIs). This view does not require any API key to work, so you can use Map View without supplying any API Key.
+Features available in Map View:
+* Custom Markers
+* Options to toggle visibility of waypoints, hearts, points of interest, map borders, region boarders.
+* Ability to import and export your custom markers in a .json file for sharing with friends or backing up. Custom Markers are stored in client side local storage and not on the server side so if you remove them from your client they will be removed from everywhere. Be sure to back them up if you don't want to lose them after a browser clear cache etc!
+* Pan to marker
+
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/196dfeab-620e-4c60-bb14-9f629c9c8edc)
+
+#### Custom Markers
+Once the map data has all loaded in (blurred when loading) you can then set a custom marker by clicking anywhere on the map. You can then view these markers by clicking the marker button on the left hand side:
+
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/288190cd-2c18-4ee5-9aa0-3369feb06b01)
+
+Open a marker to see the description given, and for the option to pan to that marker:
+
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/c5863899-25f8-4dde-9843-f77481cbca73)
+
+Use the location button to pan to that custom marker on the map. Use the note button to edit the details of that custom marker.
+
+To remove a marker, pan to it and then click on the marker. To remove all markers at once, use the Bin all option. This is a destructive action and will delete ALL your custom markers.
+
+Use the Export button to export all your custom markers into a .json file which can then be shared with your friends, or used as a backup in case you lose your markers.
+Use the Import button to import an exported .json file such as your friends, to import their markers. This will not remove your markers, but will add the markers into your collection.
 
 
 
-## Map view
-The map view does not require an API key to view.
-Features:
-   - a GW2 interactive map made using leaflet and the GW2 tile service.
-   - can place custom markers on map and rename for remembering some cool locations in Tyria
-   - can pan to those marker points by clicking the "show me" button when  you drill into the marker item in the right hand side section
-   - can import and export custom marker json files.
-     
-### Custom Markers
+### Trading View
+The trading view gives information around the trading post:
+* Items / gold currently waiting for you to pick up
+* Your pending sell transactions which have been listed for sale along with how much for, and when it was listed.
 
-You can click anywhere on the map to set a custom marker. You can set a custom name and description by clicking the pencil button on that marker:
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/1f49aabc-c684-4993-83b3-60b04c98d540)
 
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/361999ea-ac27-4776-8750-70dd52e4e414)
+#### Waiting for pickup
+Items waiting for pickup will show in this tile:
 
-Markers are stored in localstorage so they will persist between page refreshes.
-You can click the "show" buttom to have the map pan to that markers location:
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/c8627da6-09d6-473a-bfde-c9a0071362e7)
 
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/2af06afd-e48d-4312-8d88-f2418bd4bf3c)
+#### Pending Sell Transactions
+Your pending sell transactions will show up like so:
 
-Use the export button to have your markers download to a .json file which you can then share with your friends, where they can then use the import button to import your markers into their instance.
-Use the Remove all button to completely wipe all of your custom markers. This is a destructive action and cannot be redone. Backup your markers by exporting them to a json file before clicking, if you want to be able to restore your custom markers.
-
-### Interactive Map
-The interactive map is created using the [leaflet.js](https://leafletjs.com/) library and the imagry and data is pulled from the GW2 APIs.
-By default waypoints, vistas, points of interest, hero points and hearts will show on the map (plus any custom markers you have).
-
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/cbf38bc1-2d53-42b4-ac3e-178870ea4182)
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/38b45bb4-ab17-4629-b196-024c469350de)
 
 
-You can turn these off / on whenever you want using the menu within the interactive map: 
+### App features
+* Dark theme / light theme toggle. Switch between the two at your pleasure using the toggle in the popout nav bar.
+* Option to remember your API key so you don't need to paste everytime. This is only ever stored in your browers local storage until you clear it via browser cache or using the Delete API key option.
+* Delete API key - use this to swap to a different API key and remove any remembering of the key you used. Any key previously remembered will be cleared from local storage and session storage.
+* Ability to generate a new sub API Key from your key. You can use this to select specific permissions and an expiry date for the key to give to your friends so they can view your stats that you allow. (your custom map notes will not show as these are only ever stored on your browser client's local storage. You will need to export these if you want to share them, for your friend to import).
+* Links to various sites such as the official GW2 wiki, the official event timers site and this github issues tab for reporting any bugs or submitting feature requests.
 
-![image](https://github.com/Rebecku/dashi-issues/assets/87721142/71f2575b-a5df-46f8-8227-777b539ee9b1)
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/67ae1028-2ea1-4b70-b841-a34ac6e60d40)
 
- 
-# Future Features in the works
-* Trading post view
-* Display all your dye unlocks
-* Mobile optimisation since this is not currently usable and only really works well on larger screens currently.
-* ... more
+#### Dark theme / light theme toggle
+Use the toggle to swap between light theme and dark theme whenever you want:
+
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/e36789a4-33f0-4d02-8151-50d007af517d)
+
+#### Generating a sub key
+Select the permissions you wish to grant the key, and an expiry date to create a sub key. The key will be copied to your clipboard when you click create:
+
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/1deb252c-96f0-4034-acb8-a64c03e2a040)
+
+any subkeys created will no longer work when its parent key (the key you were logged in with when you created one) expires or is deleted. The sub key cannot have more permissions than its parent, only the same or less. Permission options will vary depending on which options were granted to the parent key.
+
+
+### Viewing on Mobile
+#### Dropdown menu in mobile view
+the popout menu will change to a dropdown one when viewed on smaller screens such as mobile.
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/32c96408-bb74-4ae9-a715-815bd769308e)
+
+#### Map view in mobile
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/b4330bbb-09e4-4295-8a12-76ad100bdebf)
+
+#### Map custom markers in mobile
+
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/64231581-e175-4a0b-9768-7007078d7cbc)
+
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/b7c3b04c-efd2-4fbf-adf2-ad778219b551)
+
+
+#### Dashboard layout
+The dashboard layout will change depending on the screen size. On mobile tiles will be arranged in a single column:
+
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/07d0d098-e6b4-45c8-bba9-a29f967b952d)
+
+#### Item Information
+clicking an item will bring up its information in a modal instead of a popover in smaller screens:
+
+![image](https://github.com/Rebecku/dashi-issues/assets/87721142/7e62f8a5-1bb2-4b38-a7b4-e01acced3948)
+
+# Known Issues
+* Custom markers import / export on mobile does not work
+
