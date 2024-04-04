@@ -1,6 +1,9 @@
 # Changelog
 changes will be added here and will display reverse chronological order (latest first)
 
+## 01/01/2024
+* Complete UI/UX overhaul including adding support for mobile viewing. All components should now be responsive to different screen size changes and everything should be viewable and workable on mobile.
+
 ## 24/07/2023
 * Added trading post view which includes:
   - Items waiting for pickup
