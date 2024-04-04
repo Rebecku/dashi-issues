@@ -140,6 +140,16 @@ clicking an item will bring up its information in a modal instead of a popover i
 
 ![image](https://github.com/Rebecku/dashi-issues/assets/87721142/7e62f8a5-1bb2-4b38-a7b4-e01acced3948)
 
+## Upcoming Features
+There are still a lot of features we want to add to Dashi. These features include, but are not limited to:
+
+* Crafting view
+* Best Route Map feature
+* Main cities / hub areas in map listed for easy navigation
+* Multi-Character inventory view, search across ALL characters inventories without having to swap through the different characters
+* Dye unlocks
+* Event Timer Markers in map view so you can easily copy waypoint chat links and see where the events are happening and when
+
 # Known Issues
 * Custom markers import / export on mobile does not work
 
