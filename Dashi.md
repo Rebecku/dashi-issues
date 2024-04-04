@@ -150,6 +150,6 @@ There are still a lot of features we want to add to Dashi. These features includ
 * Dye unlocks
 * Event Timer Markers in map view so you can easily copy waypoint chat links and see where the events are happening and when
 
-# Known Issues
+## Known Issues
 * Custom markers import / export on mobile does not work
 
