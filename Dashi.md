@@ -17,6 +17,8 @@ The character view shows information at an individual character level. You can u
 
 ![image](https://github.com/Rebecku/dashi-issues/assets/87721142/6d1f1d1e-0307-43af-b1af-140c708ddc0d)
 
+Click on the character selector to see a dropdown of all your characters and swap between them.
+
 #### Inventory Search
 Type in the search box to search over your characters inventory and narrow down results:
 
